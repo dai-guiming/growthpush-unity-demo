@@ -21,7 +21,7 @@ public class GPScript  : MonoBehaviour {
 	}
 
 	void Awake () {
-		GrowthPush.initialize(applicationId, secret, environment, option, debug);
+		GrowthPush.initialize(applicationId, secret, environment, debug, option);
 		GrowthPush.register(senderID);
 
 		GrowthPush.launchWithNotification(data => {
